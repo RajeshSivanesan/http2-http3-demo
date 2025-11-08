@@ -1,0 +1,10 @@
+{
+    "name": "http2-http3-demo",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Minimal Node demo for HTTP/2 server + optional HTTP/3 via Caddy, with a FE showing single-connection multiplexing.",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {}
+}

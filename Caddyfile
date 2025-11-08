@@ -1,0 +1,15 @@
+{
+	servers {
+		protocols h1 h2 h3
+	}
+}
+
+localhost {
+	tls internal
+	encode zstd gzip
+	reverse_proxy https://localhost:8443 {
+		transport http {
+			tls_insecure_skip_verify
+		}
+	}
+}
